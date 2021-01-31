@@ -5,12 +5,17 @@ import CopyPlugin           from "copy-webpack-plugin";
 import webpack              from "webpack"; // to access built-in plugins
 
 
+
+const ENV = process.env.NODE_ENV;
+
+
+
 const HTMLWebpackPluginConfig = new HtmlWebpackPlugin (
   {
   /* configuration object here */
     template: __dirname + '/public/index.html',
     // File output path are relative to ./build/static/js
-    filename: '../../index.html',
+    filename: ENV === "production" ? "../../index.html": 'index.html',
     inject: 'body'
   }
 );
@@ -64,7 +69,6 @@ const copyPluginConfig = new CopyPlugin (
 
 
 // Production
-const ENV = process.env.NODE_ENV;
 const productionConfig = new webpack.DefinePlugin (
   {
     "process.env.NODE_ENV": JSON.stringify (ENV)
