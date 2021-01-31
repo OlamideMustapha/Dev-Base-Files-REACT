@@ -1,6 +1,4 @@
-(BSD License)
-
-Copyright Akinkunmi Mustapha here (c) 2020
+Copyright Akinkunmi Mustapha (c) 2020
 
 All rights reserved.
 
