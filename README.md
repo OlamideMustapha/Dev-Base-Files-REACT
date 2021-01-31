@@ -27,6 +27,7 @@ Install [Nodejs v15.4.0](https://nodejs.org/en/download/). Also you will need to
     react-redux ^7.2.2
     react-router-dom ^5.2.0
     react-router-redux ^4.0.8
+    redux-thunk ^2.3.0
 
 #### Devdependencies
     @babel/core ^7.12.10
